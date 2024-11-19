@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Centered Logo Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  /* Social Media Icon Boxes */
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .icon-box {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  
+  .icon-box img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Space between icon and name */
+  }
+  
+  .icon-box p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+
+.social-media a{
+    text-decoration: none;
+} 
+.contact-info a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Set up the video to fill the background */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place it behind other elements */
+}
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .icon-box {
+      height: 50px;
+    }
+    .social-media {
+        padding: 30px; 
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .icon-box {
+      height: 45px;
+      padding: 5px 10px;
+    }
+    
+  }
+  
